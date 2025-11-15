@@ -1,6 +1,5 @@
 * {
     FONT-FAMILY: ARIAL, SANS-SERIF;
-    text-align: right;
 }
 
 body {
@@ -8,27 +7,44 @@ body {
 }
 
 h2 {
-    COLOR: BLUE;
+    COLOR: black;
 }
 
 p {
     FONT-SIZE: 20PX;
-    COLOR: GREEN;
-    border: 3px solid black;
+    COLOR: black;
 }
 
 li {
     list-style: none;
     display: inline;
-    border: 2px dashed red;
 }
 
 strong {
-    COLOR: RED;
+    COLOR: black;
 }
 
-div {
-    border: 5px dotted purple;
-    margin: 10px;
-    padding: 10px;
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+    border: 15px;
+    padding: 15px;
+}
+
+nav {
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
 }

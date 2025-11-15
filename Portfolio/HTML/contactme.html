@@ -19,27 +19,35 @@
     </nav>
     <form method="GET">
         <br>
-        <h4>First Name : </h4><input type="text" name="firstname" required>
-        <br>
-        <h4>Last Name : </h4><input type="text" name="firstname" required>
-        <br>
-        <h4>Email : </h4> <input type="email" required>
-        <br>
-        <h4>Company : </h4> <input type="text" name="company">
-        <br>
+        <div class="textbox">
+            <h4>First Name : </h4><input type="text" class="text" name="firstname" required>
+            <br>
+        </div>
+        <div class="textbox">
+            <h4>Last Name : </h4><input type="text" class="text" name="lastname" required>
+            <br>
+        </div>
+        <div class="textbox">
+            <h4>Email : </h4> <input type="email" class="text" required>
+            <br>
+        </div>
+        <div class="textbox">
+            <h4>Company : </h4> <input type="text" class="text" name="company">
+            <br>
+        </div>
+
         <h3>Reason To Contact:</h3>
         <input type="radio" name="reason" required>Project<br>
         <input type="radio" name="reason">Thesis<br>
         <input type="radio" name="reason">Job<br>
         <h3>Services I Provide:</h3>
-        <br>
         <input type="checkbox" name="services" required>Deep Learning<br>
         <input type="checkbox" name="services" required>Data Science<br>
         <input type="checkbox" name="services" required>Natural Language Processing<br>
         <br>
         <input type="date" required><br>
         <br>
-        <div>
+        <div class="button">
             <input type="submit" value="Book Appointment">
             <input type="reset" value="Reset">
         </div>
