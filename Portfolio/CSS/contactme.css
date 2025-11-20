@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 body {
@@ -11,49 +11,20 @@ body {
     padding: 20px;
 }
 
-h2 {
+.page-title {
+    text-align: center;
     color: green;
     margin-bottom: 10px;
 }
 
-h3 {
-    color: darkred;
-    margin-bottom: 8px;
-}
-
-h4 {
-    color: red;
-    border: 2px;
-    margin: 2px;
-    padding: 2px;
-}
-
-li {
+nav {
+    margin-top: 10px;
     margin-bottom: 5px;
-    padding-left: 15px;
-    list-style-type: square;
-
-}
-
-.button {
-    color: aqua;
-    font-size: 10px;
+    padding: 15px;
     display: flex;
-    gap: 10px;
-}
-
-
-.textbox {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-    margin: 5px;
-    padding: 5px;
-}
-
-nav li {
-    display: inline;
-    margin-right: 15px;
+    justify-content: center;
+    gap: 20px;
+    background-color: lightslategray;
 
 }
 
@@ -62,4 +33,60 @@ nav a {
     color: darkblue;
     font-weight: bold;
 
+}
+
+
+.form-row {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 50px;
+
+}
+
+
+.form-row>label {
+    width: 190px;
+    color: red;
+    font-weight: bold;
+    margin-right: 22px;
+    text-align: left;
+}
+
+.field {
+    flex: 1;
+}
+
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="date"] {
+    width: 100%;
+    padding: 5px 7px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+}
+
+.options label {
+    white-space: nowrap;
+    font-weight: normal;
+    color: #000;
+}
+
+
+.button-row {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button-row input[type="submit"],
+.button-row input[type="reset"] {
+    padding: 6px 18px;
+    margin: 0 10px;
+    cursor: pointer;
 }
