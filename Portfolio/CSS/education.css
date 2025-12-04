@@ -1,56 +1,98 @@
 * {
-    FONT-FAMILY: ARIAL, SANS-SERIF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    BACKGROUND-COLOR: LIGHTGRAY;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #021526;
+    color: #e5e7eb;
+    padding: 20px 0 40px;
 }
 
-
-
-nav {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 15px;
+.header {
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    background-color: lightslategray;
+    align-items: center;
+    margin: 20px;
+}
 
+.header h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #e5e7eb;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    background-color: #042F5C;
+    border-radius: 999px;
 }
 
 nav a {
     text-decoration: none;
-    color: darkblue;
-    font-weight: bold;
-
+    color: #e5e7eb;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 14px;
+    border-radius: 999px;
 }
 
-.header {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+nav a:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
 }
 
 .education {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 10px;
-    width: 1000px;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    margin: 18px auto;
+    width: 100%;
+    background-color: #053B73;
+    border-radius: 999px;
 
 }
+
 
 .education img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
+    object-fit: contain;
+    border-radius: 20px;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.education img:hover {
+    transform: scale(1.07);
+}
+
+.education div {
+    flex: 1;
+    padding-right: 10px;
 }
 
 .education h3 {
-    margin: 10px;
-    color: darkblue;
+    color: #dbeafe;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.education strong {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f9fafb;
 }

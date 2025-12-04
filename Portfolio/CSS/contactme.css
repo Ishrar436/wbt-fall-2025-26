@@ -1,40 +1,58 @@
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    line-height: 1.6;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #021526;
+    color: #e5e7eb;
+    padding: 20px 0 40px;
 }
 
-.page-title {
-    text-align: center;
-    color: green;
-    margin-bottom: 10px;
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.header h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #e5e7eb;
 }
 
 nav {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 12px 24px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    background-color: lightslategray;
-
+    gap: 24px;
+    background-color: #042F5C;
+    border-radius: 999px;
 }
 
 nav a {
     text-decoration: none;
-    color: darkblue;
-    font-weight: bold;
-
+    color: #e5e7eb;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 14px;
+    border-radius: 999px;
 }
 
+nav a:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+}
 
 .form-row {
     display: flex;
@@ -45,7 +63,7 @@ nav a {
 }
 
 
-.form-row>label {
+.form-row label {
     width: 190px;
     color: red;
     font-weight: bold;
@@ -58,24 +76,23 @@ nav a {
 }
 
 
-.field input[type="text"],
-.field input[type="email"],
-.field input[type="date"] {
+.field input {
     width: 100%;
     padding: 5px 7px;
 }
 
-.options {
-    display: flex;
+
+.field-options {
+    display: inline;
     flex-wrap: wrap;
     gap: 18px;
     align-items: center;
 }
 
-.options label {
+.field-options label {
     white-space: nowrap;
     font-weight: normal;
-    color: #000;
+    color: #e5e7eb;
 }
 
 
@@ -89,4 +106,12 @@ nav a {
     padding: 6px 18px;
     margin: 0 10px;
     cursor: pointer;
+    background-color: #03223D;
+    color: #e5e7eb;
+}
+
+.button-row :hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+
 }
